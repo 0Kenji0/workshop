@@ -11,11 +11,11 @@ pre : " <b> 1.2 </b> "
 1. **Create EC2** 
     - Go to **EC2 Instance**
     - Choose **Launch Instances**
-![1](/images/aws/1.1.png?featherlight=false&width=90pc)
+![1](/workshop/images/aws/1.1.png)
 2. **Configure EC2**
     - Name **the instance**
     - Then follow of these steps
-![2](/images/aws/1.2.png?featherlight=false&width=90pc)
+![2](/workshop/images/aws/1.2.png)
     > **Note:** Choose the free tier
     {{% notice info %}}
         Choose the free tier to save your money!!!
@@ -23,4 +23,4 @@ pre : " <b> 1.2 </b> "
     - Select your **Key Pair**
     - Choose your **Firewall** type(if you dont have any of them just create like the step)
     - **Launch instance**
-![3](/images/aws/1.3.png?featherlight=false&width=90pc)
+![3](/workshop/images/aws/1.3.png)
