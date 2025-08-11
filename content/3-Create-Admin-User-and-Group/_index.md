@@ -7,27 +7,27 @@ pre : " <b> 3. </b> "
 ---
 #### Access to S3
 - Create S3 Bucket for frontend
-![14](/images/aws/1.14.png?featherlight=false&width=90pc)
+![14](/workshop/images/aws/1.14.png)
 - Fill your name bucket
 - Choose general type s3 
-![15](/images/aws/1.15.png?featherlight=false&width=90pc)
+![15](/workshop/images/aws/1.15.png)
 - Unchoose Block all access
 - Disable version
-![16](/images/aws/1.16.png?featherlight=false&width=90pc)
+![16](/workshop/images/aws/1.16.png)
 - Choose first encryption type
 - Enable bucket key
-![17](/images/aws/1.17.png?featherlight=false&width=90pc)
+![17](/workshop/images/aws/1.17.png)
 - After finishing those steps you just click into s3 and upload your files
 - Choose the file correctly then follow the steps below 
 - When you finish click the link on s3 to make sure it works 
-![18](/images/aws/1.18.png?featherlight=false&width=90pc)
+![18](/workshop/images/aws/1.18.png)
 - Access your File to upload all the file you need
-![19](/images/aws/1.19.png?featherlight=false&width=90pc)
-![20](/images/aws/1.20.png?featherlight=false&width=90pc)
+![19](/workshop/images/aws/1.19.png)
+![20](/workshop/images/aws/1.20.png)
 - After created your S3 bucket click into it
 - Find permission tag and scroll down
 - Click edit 
-![21](/images/aws/1.21.png?featherlight=false&width=90pc)
+![21](/workshop/images/aws/1.21.png)
 -Paste this code into S3 edit permission:
  {{% notice info %}}
      {
@@ -63,11 +63,12 @@ pre : " <b> 3. </b> "
 ![24](/workshop/images/aws/1.24.png)
 ![25](/workshop/images/aws/1.25.png)
 - Next step going to CloudFront 
-![26](/workshop/images/aws/1.26.png?featherlight=false&width=90pc)
-![27](/workshop/images/aws/1.27.png?featherlight=false&width=90pc)
-![28](/images/aws/1.28.png?featherlight=false&width=90pc)
+![26](/workshop/images/aws/1.26.png)
+![27](/workshop/images/aws/1.27.png)
+![28](/workshop/images/aws/1.28.png)
 - After finishing that click on the newest CloudFront you created
-- Do
-![29](/images/aws/1.29.png?featherlight=false&width=90pc)
-![30](/images/aws/1.30.png?featherlight=false&width=90pc)
+- Do all these steps and you are ready to deploy your web 
+- Click on the link below CloudFront you deployed and see how it works
+![29](/workshop/images/aws/1.29.png)
+![30](/workshop/images/aws/1.30.png)
 

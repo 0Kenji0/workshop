@@ -8,14 +8,14 @@ pre : " <b> 2.1 </b> "
 #### GET INTO EC2 CMD
 
 1.**After you launch instance successfully, click on the newest one just created**
-![8](/images/aws/1.8.png?featherlight=false&width=90pc)
+![8](/workshop/images/aws/1.8.png)
    - Then click connect and you will get a EC2 Command Prompt on your new tab
-![9](/images/aws/1.9.png?featherlight=false&width=90pc)
+![9](/workshop/images/aws/1.9.png)
    - Then typing **sudo yum install -y nodejs** to download, it takes a while to download dont worry
    - After that type **sudo npm install -g pm2**
    - Type **sudo yum install -y git** and then wait for them downloading
 
-![10](/images/aws/1.10.png?featherlight=false&width=90pc)
+![10](/workshop/images/aws/1.10.png)
 {{% notice info %}}
         **sudo yum install -y nodejs** 
         **sudo npm install -g pm2**
@@ -30,7 +30,7 @@ pre : " <b> 2.1 </b> "
    - Type **echo "PORT=5001">> .env**
    - Type **echo "NODE_ENV=production">> .env**
    
-![11](/images/aws/1.11.png?featherlight=false&width=90pc)
+![11](workshop/images/aws/1.11.png)
    -Check the version and then you ready to go
    {{% notice info %}}
       #Clone your backend repository 
