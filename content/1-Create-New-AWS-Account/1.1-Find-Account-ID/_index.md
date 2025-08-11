@@ -12,7 +12,7 @@ pre : " <b> 1.1 </b> "
 - Select **Key Pairs**
 - Select **Create Key Pair**
 
-![4](/images/aws/1.4.png?featherlight=false&width=90pc)
+![4](/workshop/images/aws/1.4.png)
 **In the initialization interface:**
 - In the **Name** section, set it by your own way
 - In the **Key Pair** type section, select RSA
