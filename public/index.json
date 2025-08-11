@@ -7,18 +7,18 @@
 	"content": "Create a Key Pair In the Network \u0026amp; Security section of the EC2 interface:\nSelect Key Pairs Select Create Key Pair In the initialization interface:\nIn the Name section, set it by your own way In the Key Pair type section, select RSA In the Private key file format section, select .pem Scroll down to the bottom of the page and select Create key pair Note Key pair is required when initializing EC2.\n"
 },
 {
+	"uri": "//localhost:1313/",
+	"title": "Deploy Website",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "//localhost:1313/1-create-new-aws-account/",
 	"title": "Preparation Steps",
 	"tags": [],
 	"description": "",
 	"content": "Content\nCreate Key Pair Deploy and Configure EC2 instance Create Security Group Connect MongoDB Atlas "
-},
-{
-	"uri": "//localhost:1313/",
-	"title": "Setting up an AWS account",
-	"tags": [],
-	"description": "",
-	"content": "Creating your first AWS account Overview In this first lab, you will be creating your new AWS account and use Multi-factor Authentication (MFA) to improve your account security. Next, you will create an Administrator Group and Admin User to manage access to resources in your account instead of using the root user. Finally, we will step through account authentication with AWS Support in the event you experience authentication problems.\nAWS Account An AWS account is the basic container for all the AWS resources you can create as an AWS customer. By default, each AWS account will have a root user. The root user has full access within your AWS account, and root user permissions cannot be limited. When you first create your AWS account, you will be assessing it as the root user.\nAs a best practice, do not use the AWS account root user for any task where it\u0026rsquo;s not required. Instead, create a new IAM user for each person that requires administrator access. Thereafter, the users in the administrators user group should set up the user groups, users, and so on, for the AWS account. All future interaction should be through the AWS account\u0026rsquo;s users and their own keys instead of the root user. However, to perform some account and service management tasks, you must log in using the root user credentials.\nMulti-Factor Authentication (MFA) MFA adds extra security because it requires users to provide unique authentication from an AWS supported MFA mechanism in addition to their regular sign-in credentials when they access AWS websites or services.\nIAM User Group An IAM user group is a collection of IAM users. User groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users. Any user in that user group automatically has the permissions that are assigned to the user group.\nIAM User An IAM user is an entity that you create in AWS to represent the person or application that uses it to interact with AWS. A user in AWS consists of a name and credentials. Please note that an IAM user with administrator permissions is not the same thing as the AWS account root user.\nAWS Support AWS Basic Support offers all AWS customers access to our Resource Center, Service Health Dashboard, Product FAQs, Discussion Forums, and Support for Health Checks – at no additional charge. Customers who desire a deeper level of support can subscribe to AWS Support at the Developer, Business, or Enterprise level.\nCustomers who choose AWS Support gain one-on-one, fast-response support from AWS engineers. The service helps customers use AWS\u0026rsquo;s products and features. With pay-by-the-month pricing and unlimited support cases, customers are freed from long-term commitments. Customers with operational issues or technical questions can contact a team of support engineers and receive predictable response times and personalized support.\nMain Content Creating a new AWS Account Setting up MFA for the AWS Account root user Creating an Administrator Accounts and Groups Getting support for Account Authentication "
 },
 {
 	"uri": "//localhost:1313/2-mfa-setup-for-aws-user-root/1-virtual-mfa-device/",
@@ -53,21 +53,21 @@
 	"title": "Setup Frontend on AWS",
 	"tags": [],
 	"description": "",
-	"content": "Access to S3 Create S3 Bucket for frontend Fill your name bucket Choose general type s3 Unchoose Block all access Disable version Choose first encryption type Enable bucket key After finishing those steps you just click into s3 and upload your files Choose the file correctly then follow the steps below When you finish click the link on s3 to make sure it works Access your File to upload all the file you need After created your S3 bucket click into it Find permission tag and scroll down Click edit -Paste this code into S3 edit permission: {\r\u0026quot;Version\u0026quot;: \u0026quot;2012-10-17\u0026quot;,\r\u0026quot;Statement\u0026quot;: [\r{\r\u0026quot;Sid\u0026quot;: \u0026quot;PublicReadGetObject\u0026quot;,\r\u0026quot;Effect\u0026quot;: \u0026quot;Allow\u0026quot;,\r\u0026quot;Principal\u0026quot;: \u0026quot;*\u0026quot;,\r\u0026quot;Action\u0026quot;: \u0026quot;s3:GetObject\u0026quot;,\r\u0026quot;Resource\u0026quot;: \u0026quot;arn:aws:s3:::baker-frontend-2024/*\u0026quot;\r},\r{\r\u0026quot;Sid\u0026quot;: \u0026quot;AllowCloudFrontServicePrincipal\u0026quot;,\r\u0026quot;Effect\u0026quot;: \u0026quot;Allow\u0026quot;,\r\u0026quot;Principal\u0026quot;: {\r\u0026quot;Service\u0026quot;: \u0026quot;cloudfront.amazonaws.com\u0026quot;\r},\r\u0026quot;Action\u0026quot;: \u0026quot;s3:GetObject\u0026quot;,\r\u0026quot;Resource\u0026quot;: \u0026quot;arn:aws:s3:::baker-frontend-2024/*\u0026quot;,\r\u0026quot;Condition\u0026quot;: {\r\u0026quot;ArnLike\u0026quot;: {\r\u0026quot;AWS:SourceArn\u0026quot;: \u0026quot;arn:aws:cloudfront::235007105677:distribution/EXB54XU4GB8MK\u0026quot;\r}\r}\r}\r]\r}\rScroll down until you find a link on S3 bucket Next step going to CloudFront After finishing that click on the newest CloudFront you created Do "
+	"content": "Access to S3 Create S3 Bucket for frontend Fill your name bucket Choose general type s3 Unchoose Block all access Disable version Choose first encryption type Enable bucket key After finishing those steps you just click into s3 and upload your files Choose the file correctly then follow the steps below When you finish click the link on s3 to make sure it works Access your File to upload all the file you need After created your S3 bucket click into it Find permission tag and scroll down Click edit -Paste this code into S3 edit permission: {\r\u0026quot;Version\u0026quot;: \u0026quot;2012-10-17\u0026quot;,\r\u0026quot;Statement\u0026quot;: [\r{\r\u0026quot;Sid\u0026quot;: \u0026quot;PublicReadGetObject\u0026quot;,\r\u0026quot;Effect\u0026quot;: \u0026quot;Allow\u0026quot;,\r\u0026quot;Principal\u0026quot;: \u0026quot;*\u0026quot;,\r\u0026quot;Action\u0026quot;: \u0026quot;s3:GetObject\u0026quot;,\r\u0026quot;Resource\u0026quot;: \u0026quot;arn:aws:s3:::baker-frontend-2024/*\u0026quot;\r},\r{\r\u0026quot;Sid\u0026quot;: \u0026quot;AllowCloudFrontServicePrincipal\u0026quot;,\r\u0026quot;Effect\u0026quot;: \u0026quot;Allow\u0026quot;,\r\u0026quot;Principal\u0026quot;: {\r\u0026quot;Service\u0026quot;: \u0026quot;cloudfront.amazonaws.com\u0026quot;\r},\r\u0026quot;Action\u0026quot;: \u0026quot;s3:GetObject\u0026quot;,\r\u0026quot;Resource\u0026quot;: \u0026quot;arn:aws:s3:::baker-frontend-2024/*\u0026quot;,\r\u0026quot;Condition\u0026quot;: {\r\u0026quot;ArnLike\u0026quot;: {\r\u0026quot;AWS:SourceArn\u0026quot;: \u0026quot;arn:aws:cloudfront::235007105677:distribution/EXB54XU4GB8MK\u0026quot;\r}\r}\r}\r]\r}\rScroll down until you find a link on S3 bucket Next step going to CloudFront After finishing that click on the newest CloudFront you created Do all these steps and you are ready to deploy your web Click on the link below CloudFront you deployed and see how it works "
 },
 {
 	"uri": "//localhost:1313/4-verify-new-account/",
 	"title": "Setup batch AWS into Project",
 	"tags": [],
 	"description": "",
-	"content": " "
+	"content": "BATCH AWS TO OPTIMIZE Create a new permission role Search Batch and create a batch on AWS { \u0026ldquo;Version\u0026rdquo;: \u0026ldquo;2012-10-17\u0026rdquo;, \u0026ldquo;Statement\u0026rdquo;: [ { \u0026ldquo;Effect\u0026rdquo;: \u0026ldquo;Allow\u0026rdquo;, \u0026ldquo;Action\u0026rdquo;: [ \u0026ldquo;sts:AssumeRole\u0026rdquo; ], \u0026ldquo;Principal\u0026rdquo;: { \u0026ldquo;Service\u0026rdquo;: [ \u0026ldquo;batch.amazonaws.com\u0026rdquo; ] } } ] }\nAfter that move to AWS BATCH and create a new batch Create a Job queue Configure BATCH When you done it will show you a dashboard This batch keep you testing all datas you added and it shows you the percentage of the data when input This is a demo when you input data into BATCH "
 },
 {
 	"uri": "//localhost:1313/5-clean-resources/",
-	"title": "Getting support for Account Authentication",
+	"title": "Clean resources",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": "CLEAN RESOURCES 1.Terminate EC2 instance: Go to EC2 Management Console On the left navigation bar, select Intances Select all relevant EC2 Instances. Click Actions. Click Manage Instance State. Select Terminate. Click Change State 2.Delete S3 Bucket Go to AWS S3. In the Bucket name list, select the relevant bucket. Select Empty. On the Empty bucket page, confirm and select Empty. Select Delete bucket 3.Delete Cloudfront Distribution Go to Cloudfront Management Console On the left navigation bar, select Distribution Select the relevant Distribution. Select Delete 4.Delete Launch Template: Go to EC2 Management Console On the left navigation bar, select Launch Templates Select the relevant Launch Template. Click Actions. Click Delete template Type delete in the blank box and press delete 5.Delete Batch Go to Batch On the left navigation bar, select Dashboard On the left navigation bar, select Job queue overview Select the relevant Jobs Click Delete on the right side "
 },
 {
 	"uri": "//localhost:1313/categories/",
