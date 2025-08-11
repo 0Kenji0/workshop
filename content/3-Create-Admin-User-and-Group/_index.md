@@ -58,15 +58,16 @@ pre : " <b> 3. </b> "
     }
 {{% /notice %}}
 - Scroll down until you find a link on S3 bucket
-![22](/images/aws/1.22.png?featherlight=false&width=90pc)
-![23](/images/aws/1.23.png?featherlight=false&width=90pc)
-![24](/images/aws/1.24.png?featherlight=false&width=90pc)
-![25](/images/aws/1.25.png?featherlight=false&width=90pc)
+![22](/workshop/images/aws/1.22.png)
+![23](/workshop/images/aws/1.23.png)
+![24](/workshop/images/aws/1.24.png)
+![25](/workshop/images/aws/1.25.png)
 - Next step going to CloudFront 
-![26](/images/aws/1.26.png?featherlight=false&width=90pc)
-![27](/images/aws/1.27.png?featherlight=false&width=90pc)
+![26](/workshop/images/aws/1.26.png?featherlight=false&width=90pc)
+![27](/workshop/images/aws/1.27.png?featherlight=false&width=90pc)
 ![28](/images/aws/1.28.png?featherlight=false&width=90pc)
 - After finishing that click on the newest CloudFront you created
+- Do
 ![29](/images/aws/1.29.png?featherlight=false&width=90pc)
 ![30](/images/aws/1.30.png?featherlight=false&width=90pc)
 

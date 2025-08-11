@@ -46,11 +46,11 @@ pre : " <b> 2.1 </b> "
    - Save PM2 configuration: 
       - **pm2 save** 
       - **pm2 startups**
-![12](/images/aws/1.12.png?featherlight=false&width=90pc)
+![12](/workshop/images/aws/1.12.png)
 - You can check by this commands:
 - cd backend
 - nano app.js
-![13](/images/aws/1.13.png?featherlight=false&width=90pc)
+![13](/workshop/images/aws/1.13.png)
 
 
 
