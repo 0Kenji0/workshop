@@ -12,21 +12,21 @@
     <title>Setup batch AWS into Project :: Create a new AWS account.</title>
 
     
-    <link href="/css/nucleus.css?1754944510" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1754944510" rel="stylesheet">
-    <link href="/css/hybrid.css?1754944510" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1754944510" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1754944510" rel="stylesheet">
-    <link href="/css/auto-complete.css?1754944510" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1754944510" rel="stylesheet">
-    <link href="/css/theme.css?1754944510" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1754944510" rel="stylesheet">
+    <link href="/css/nucleus.css?1754945847" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1754945847" rel="stylesheet">
+    <link href="/css/hybrid.css?1754945847" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1754945847" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1754945847" rel="stylesheet">
+    <link href="/css/auto-complete.css?1754945847" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1754945847" rel="stylesheet">
+    <link href="/css/theme.css?1754945847" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1754945847" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1754944510" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1754945847" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1754944510"></script>
+    <script src="/js/jquery-3.3.1.min.js?1754945847"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1754944510"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1754944510"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1754945847"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1754945847"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1754944510"></script>
+<script type="text/javascript" src="/js/search.js?1754945847"></script>
 
     
   </div>
@@ -478,7 +478,15 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -502,16 +510,51 @@
 
 
 
-	<p><img src="/workshop/images/aws/1.31.png" alt="31">
+	<h4 id="batch-aws-to-optimize">BATCH AWS TO OPTIMIZE</h4>
+<p><img src="/workshop/images/aws/1.31.png" alt="31"></p>
+<ul>
+<li>Create a new permission role</li>
+<li>Search <strong>Batch</strong> and create a batch on AWS
 <img src="/workshop/images/aws/1.32.png" alt="32">
-<img src="/workshop/images/aws/1.33.png" alt="33">
+
+<div class="notices info" ><p>{
+&ldquo;Version&rdquo;: &ldquo;2012-10-17&rdquo;,
+&ldquo;Statement&rdquo;: [
+{
+&ldquo;Effect&rdquo;: &ldquo;Allow&rdquo;,
+&ldquo;Action&rdquo;: [
+&ldquo;sts:AssumeRole&rdquo;
+],
+&ldquo;Principal&rdquo;: {
+&ldquo;Service&rdquo;: [
+&ldquo;batch.amazonaws.com&rdquo;
+]
+}
+}
+]
+}</p>
+</div>
+
+<img src="/workshop/images/aws/1.33.png" alt="33"></li>
+<li>After that move to <strong>AWS BATCH</strong> and create a new batch</li>
+<li>Create a Job queue</li>
+<li>Configure <strong>BATCH</strong>
 <img src="/workshop/images/aws/1.34.png" alt="34">
 <img src="/workshop/images/aws/1.35.png" alt="35">
 <img src="/workshop/images/aws/1.36.png" alt="36">
 <img src="/workshop/images/aws/1.37.png" alt="37">
 <img src="/workshop/images/aws/1.38.png" alt="38">
 <img src="/workshop/images/aws/1.39.png" alt="39">
-<img src="/workshop/images/aws/1.40.png" alt="40"></p>
+<img src="/workshop/images/aws/1.40.png" alt="40"></li>
+<li>When you done it will show you a dashboard</li>
+<li>This batch keep you testing all datas you added and it shows you the percentage of the data when input</li>
+<li>This is a demo when you input data into BATCH
+<img src="/workshop/images/aws/1.40.png" alt="41">
+<img src="/workshop/images/aws/1.40.png" alt="42">
+<img src="/workshop/images/aws/1.40.png" alt="43">
+<img src="/workshop/images/aws/1.40.png" alt="44">
+<img src="/workshop/images/aws/1.40.png" alt="45"></li>
+</ul>
 
 
 
@@ -724,19 +767,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1754944510"></script>
-    <script src="/js/perfect-scrollbar.min.js?1754944510"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1754944510"></script>
-    <script src="/js/jquery.sticky.js?1754944510"></script>
-    <script src="/js/featherlight.min.js?1754944510"></script>
-    <script src="/js/highlight.pack.js?1754944510"></script>
+    <script src="/js/clipboard.min.js?1754945847"></script>
+    <script src="/js/perfect-scrollbar.min.js?1754945847"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1754945847"></script>
+    <script src="/js/jquery.sticky.js?1754945847"></script>
+    <script src="/js/featherlight.min.js?1754945847"></script>
+    <script src="/js/highlight.pack.js?1754945847"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1754944510"></script>
-    <script src="/js/learn.js?1754944510"></script>
-    <script src="/js/hugo-learn.js?1754944510"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1754945847"></script>
+    <script src="/js/learn.js?1754945847"></script>
+    <script src="/js/hugo-learn.js?1754945847"></script>
 
-    <link href="/mermaid/mermaid.css?1754944510" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1754944510"></script>
+    <link href="/mermaid/mermaid.css?1754945847" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1754945847"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
